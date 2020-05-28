@@ -1,1 +1,1 @@
-# clock-backgroundimage
+# clock-random-image
