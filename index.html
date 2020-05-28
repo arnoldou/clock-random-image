@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image y Reloj</title>
+</head>
+<body>
+
+<img id="imagen">
+
+<script>
+    arr = ["https://i.picsum.photos/id/1024/1920/1280.jpg", 
+    "https://i.picsum.photos/id/1019/1920/1280.jpg", 
+    "https://i.picsum.photos/id/1020/1920/1280.jpg",
+    "https://i.picsum.photos/id/10/1920/1280.jpg",
+    "https://i.picsum.photos/id/1043/1920/1280.jpg",
+    "https://i.picsum.photos/id/1051/1920/1280.jpg" 
+    ];
+let imagen = document.getElementById('imagen')
+function imagenRandom (){
+  imagen.src = arr[Math.floor(Math.random() * (arr.length))]
+} 
+
+window.setInterval(function(){
+  imagenRandom(arr)  
+}, 5000);
+
+</script>
+</body>
+</html>
